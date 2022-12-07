@@ -1,0 +1,36 @@
+﻿{
+  "$schema": "http://json.schemastore.org/launchsettings.json",
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:61350",
+      "sslPort": 44392
+    }
+  },
+  "profiles": {
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "JWT_SECRET": "This is my secret :)",
+        "JWT_ISSUER": "BEEnance",
+        "CLIENT_ID": "" // ДОПИШИ СЮДИ АЙДІ ВІД ГУГЛА
+      }
+    },
+    "Expenses.WebApi": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "applicationUrl": "https://localhost:5001;http://localhost:5000",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "JWT_SECRET": "This is my secret :)",
+        "JWT_ISSUER": "BEEnance",
+        "CLIENT_ID": "" // ДОПИШИ СЮДИ АЙДІ ВІД ГУГЛА
+      }
+    }
+  }
+}

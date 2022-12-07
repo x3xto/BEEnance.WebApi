@@ -47,11 +47,11 @@ namespace Expenses.Core
             if (dbUser == null
                 || _passwordHasher.VerifyHashedPassword(dbUser.Password, user.Password) == PasswordVerificationResult.Failed)
             {
-                throw new InvalidUsernamePasswordException("Invalid username or password");
+                throw new InvalidUsernamePasswordException("Неправильне ім'я користувача чи пароль!");
             }
             if (dbUser.Password == null)
             {
-                throw new InvalidUsernamePasswordException("There's no password, try to login with Google");
+                throw new InvalidUsernamePasswordException("Пароль відсутній, спробуйте увійти через Google");
             }
 
             return new AuthenticatedUser
@@ -68,7 +68,7 @@ namespace Expenses.Core
 
             if (checkUser != null)
             {
-                throw new UsernameAlreadyExistsException("Username already exists!");
+                throw new UsernameAlreadyExistsException("Користувач з таким іменем вже існує!");
             }
 
             if (!string.IsNullOrEmpty(user.Password))

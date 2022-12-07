@@ -15,7 +15,7 @@
       "launchUrl": "swagger",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development",
-        "JWT_SECRET": "This is my secret :)",
+        "JWT_SECRET": "TrutenFinanceSecret1488",
         "JWT_ISSUER": "BEEnance",
         "CLIENT_ID": "" // ДОПИШИ СЮДИ АЙДІ ВІД ГУГЛА
       }
@@ -27,7 +27,7 @@
       "applicationUrl": "https://localhost:5001;http://localhost:5000",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development",
-        "JWT_SECRET": "This is my secret :)",
+        "JWT_SECRET": "TrutenFinanceSecret1488",
         "JWT_ISSUER": "BEEnance",
         "CLIENT_ID": "" // ДОПИШИ СЮДИ АЙДІ ВІД ГУГЛА
       }
